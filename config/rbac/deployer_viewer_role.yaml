@@ -1,0 +1,27 @@
+# permissions for end users to view deployers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: deployer-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: operator
+    app.kubernetes.io/part-of: operator
+    app.kubernetes.io/managed-by: kustomize
+  name: deployer-viewer-role
+rules:
+- apiGroups:
+  - operator.github.com
+  resources:
+  - deployers
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - operator.github.com
+  resources:
+  - deployers/status
+  verbs:
+  - get

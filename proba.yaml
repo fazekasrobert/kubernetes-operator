@@ -1,0 +1,9 @@
+apiVersion: operator.github.com/v1
+kind: Deployer
+metadata:
+  name: demo
+  namespace: sandbox-system
+spec:
+  replicas: 2
+  images: "httpd"
+  host: "abc.localdev.me"
