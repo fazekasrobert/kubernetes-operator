@@ -6,4 +6,4 @@ metadata:
 spec:
   replicas: 2
   images: "httpd"
-  host: "abc.localdev.me"
+  host: "bruhaha.localdev.me"
