@@ -3,7 +3,7 @@ Basic kubernetes operator built with Kubebuilder to deploy httpd.
 
 ## Getting Started
 You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
-**Note:** Your controller will automatically use the current context in your kubeconfig file (i.e. whatever cluster `kubectl cluster-info` shows).
+**NOTE:** Your controller will automatically use the current context in your kubeconfig file (i.e. whatever cluster `kubectl cluster-info` shows).
 
 ### Test It Out
 1. Install the CRDs into the cluster:
@@ -12,7 +12,7 @@ You’ll need a Kubernetes cluster to run against. You can use [KIND](https://si
 make install
 ```
 
-**Note:** make install also creates a namespace, called sandbox-system. Each CRD should be placed in this namespace.
+**NOTE:** `make install` also creates a namespace, called `sandbox-system`. Each CRD should be placed in this namespace.
 
 2. Create a sample CRD on the cluster:
 
@@ -33,8 +33,9 @@ make run
 make uninstall
 ```
 
-**Note:** Also, make uninstall deletes sandbox-system namespace and all of its content.
-**NOTE:** Run `make --help` for more information on all potential `make` targets
+**NOTE:** Also, `make uninstall` deletes `sandbox-system` namespace and all of its content.
+
+**NOTE:** Run `make --help` for more information on all potential `make` targets.
 
 More information can be found via the [Kubebuilder Documentation](https://book.kubebuilder.io/introduction.html)
 
