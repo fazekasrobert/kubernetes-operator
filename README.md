@@ -5,6 +5,13 @@ Basic kubernetes operator built with Kubebuilder to deploy httpd.
 You’ll need a Kubernetes cluster to run against. You can use [KIND](https://sigs.k8s.io/kind) to get a local cluster for testing, or run against a remote cluster.
 **NOTE:** Your controller will automatically use the current context in your kubeconfig file (i.e. whatever cluster `kubectl cluster-info` shows).
 
+### Prerequisites
+Deploy `ingress-nginx` on your cluster:
+
+```sh
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.5.1/deploy/static/provider/cloud/deploy.yaml
+```
+
 ### Test It Out
 1. Install the CRDs into the cluster:
 
